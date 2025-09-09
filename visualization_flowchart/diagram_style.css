@@ -1,0 +1,55 @@
+/* dark_yellow_diagram.css */
+/* Ensure the diagram itself has a transparent background so mmdc -b flag takes effect */
+.mermaid > svg {
+  background-color: transparent !important; /* Important to override default white */
+}
+
+/* Default text color for labels within nodes if not overridden */
+.label {
+  fill: #000000 !important; /* Black text */
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+}
+
+/* Node styling */
+.node rect, 
+.node circle, 
+.node polygon, 
+.node ellipse {
+  fill: #FFD700 !important;   /* Yellow fill for nodes (e.g., Gold) */
+  stroke: #DAA520 !important; /* Darker yellow/goldenrod for node borders */
+  stroke-width: 2px !important;
+}
+
+/* Specific label styling for nodes to ensure black text */
+.node .label, 
+.node text { /* General text within node */
+  fill: #000000 !important; /* Black text */
+}
+
+/* Edge/Link styling */
+.edgePath .path { /* Class for the line itself */
+  stroke: #FFFFFF !important; /* White lines */
+  stroke-width: 2px !important;
+}
+
+/* Arrowhead styling */
+.arrowheadPath {
+  fill: #FFFFFF !important;   /* White arrowheads */
+  stroke: #FFFFFF !important; /* Ensure arrowhead border is also white if applicable */
+}
+
+/* Cluster styling (if you use subgraphs) */
+.cluster rect {
+  fill: #1A1A1A !important;   /* Very dark gray for cluster background, almost black */
+  stroke: #444444 !important; /* Medium dark gray for cluster border */
+  stroke-width: 1.5px !important;
+}
+.cluster text { /* Cluster title text */
+  fill: #F0F0F0 !important; /* Light gray/off-white for cluster title */
+}
+
+/* Ensure any default Mermaid themes don't override background for the diagram area */
+.diagram-container div.mermaid {
+  background-color: transparent !important;
+}

@@ -1,0 +1,7 @@
+requests>=2.31.0
+pymupdf
+python-dotenv
+pydantic
+loguru
+fpdf2
+Pillow

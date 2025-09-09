@@ -1,0 +1,7 @@
+
+langchain
+langchain-community
+PyMuPDF
+fpdf2
+faiss-cpu
+tiktoken

@@ -1,0 +1,28 @@
+/* diagram_style.css */
+body {
+  font-family: 'Arial', sans-serif;
+}
+.node rect, .node circle, .node polygon, .node ellipse {
+  stroke: #A6B3F7; /* Light indigo for node borders */
+  fill: #2C336A;   /* Dark indigo for node fill */
+  stroke-width: 2px;
+}
+.node .label {
+  fill: #E0E7FF; /* Light lavender for text */
+  font-weight: bold;
+}
+.edgePath path {
+  stroke: #7C8EE2; /* Medium indigo for lines */
+  stroke-width: 2px;
+}
+.arrowheadPath {
+  fill: #7C8EE2; /* Medium indigo for arrowheads */
+}
+.cluster rect {
+  fill: #374151; /* Darker gray for cluster background */
+  stroke: #6B7280; /* Medium gray for cluster border */
+  stroke-width: 1.5px;
+}
+.cluster text {
+  fill: #D1D5DB; /* Light gray for cluster title */
+}
