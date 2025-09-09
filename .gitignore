@@ -174,8 +174,14 @@ logs/
 outputs/
 diagrams/
 research_papers/
-*.pdf
-!README.md
+# Exclude PDFs from subdirectories but allow root level output PDFs
+*/*.pdf
+*/**.pdf
+# Allow specific root level output PDFs
+!*.pdf
+!1112_combined_report.pdf
+!attention_combined_report.pdf
+!research_report_1742590704.pdf
 
 # Model files
 *.bin
